@@ -3,7 +3,7 @@ import cv2
 import os
 
 # Chemin du dossier à parcourir
-folder_path = "imagesimdonkeycar"
+folder_path = "dataSet"
 
 # Créer le dossier "output" s'il n'existe pas déjà
 output_folder = os.path.join(folder_path, 'output')
@@ -28,11 +28,11 @@ for filename in os.listdir(folder_path):
 
 
 # chemin du dossier contenant les images
-folder_path = "imagesimdonkeycar/output"
+folder_path = "dataSet/output"
 
 # créer un dossier pour stocker les images traitées
-if not os.path.exists("output_color"):
-    os.mkdir("output_color")
+if not os.path.exists("treatment_dataSet"):
+    os.mkdir("treatment_dataSet")
 
 # parcourir toutes les images dans le dossier
 for image_name in os.listdir(folder_path):
@@ -63,7 +63,7 @@ for image_name in os.listdir(folder_path):
             else:
                 img[y, x] = 0
 
-    # enregistrer l'image modifiée dans le dossier output_color
-    output_path = os.path.join("output_color", image_name)
+    # enregistrer l'image modifiée dans le dossier treatment_dataSet
+    output_path = os.path.join("treatment_dataSet", image_name)
     cv2.imwrite(output_path, img)
 
