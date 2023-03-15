@@ -4,7 +4,7 @@ This python script allows to process the images of a dataset to recover this sam
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install OnpenCV.
 
 ```bash
 pip install opencv-python
