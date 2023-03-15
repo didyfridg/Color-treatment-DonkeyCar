@@ -1,6 +1,6 @@
 # Color treatment script
 
-this python script allows to process the images of a dataset to recover this same dataset, crop and color processed. In order to send this last one in deep learning process
+This python script allows to process the images of a dataset to recover this same dataset, crop and color processed. In order to send this last one in deep learning process
 
 ## Installation
 
