@@ -32,10 +32,6 @@ if not os.path.exists("treatment_dataSet"):
 for image_name in os.listdir(folder_path):
     image_path = os.path.join(folder_path, image_name)
 
-    if not os.path.isfile(image_path):
-        print(f"Le fichier {image_name} n'existe pas!")
-        continue
-
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     height, width = img.shape[:2]
