@@ -21,7 +21,7 @@ for filename in os.listdir(folder_path):
             image = cv2.imread(image_path)
             if image is not None:
                 crop = image[y:y + h, x:x + w]
-                output_path = os.path.join(output_folder, 'Output' + filename)
+                output_path = os.path.join(output_folder, filename)
                 cv2.imwrite(output_path, crop)
 
 folder_path = "dataSet/output"
