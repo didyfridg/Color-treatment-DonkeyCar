@@ -1,7 +1,7 @@
 import cv2
 import os
 
-# variable du crop
+# variable du cropp
 y = 50
 x = 0
 h = 100
